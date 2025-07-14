@@ -22,3 +22,5 @@ pip install sentence-transformers==4.1.0
 
 pip install einops #gia to tzina
 
+test
+

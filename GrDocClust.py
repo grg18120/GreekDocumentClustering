@@ -5,6 +5,7 @@ import GrDocClust.config as config
 # Create directories if they doesnt exist to store vectors-embedding 
 experiments.create_serialized_datasets_vectors_dirs()
 
+# Load NLP Models
 (
     spacy_model_gr, 
     bert_model_gr,
@@ -12,8 +13,9 @@ experiments.create_serialized_datasets_vectors_dirs()
     jina_v3_model,
     sent_transformers_paraph_multi_model_gr,
     xlm_roberta_model_gr
-) = utils.load_models(config.vectorizers_strings)
+) = utils.load_models()
 
+# Main Loop
 for dataset_string in config.datasets_strings:
     [corpus, labels_true, n_clusters]  = utils.wrapper(config.datasets_pointers().get(dataset_string))
     print("Corpus Size before clean: ", len(corpus))

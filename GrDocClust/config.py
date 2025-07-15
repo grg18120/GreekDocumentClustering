@@ -20,9 +20,9 @@ random_state = 42
 # ------------------------ Datasets - Corpus ------------------------ #
 datasets_strings = [
     "test",
-    #"greek_reddit",
-    #"pubmed4000_greek",
-    #"greeksum",
+    "greek_reddit",
+    "pubmed4000_greek",
+    "greeksum",
 ]
 
 def datasets_pointers():

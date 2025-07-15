@@ -7,9 +7,9 @@ This repository holds the code for the paper titled *"-----"*.
 
 ### 📁 Setup Instructions
 
-Before running any code, you **MUST** set the `ROOT_DIR` variable in: `GreekDocumentClustering/GrDocClust/config.py` 
+- Before running any code, you **MUST** set the `ROOT_DIR` variable in: `GreekDocumentClustering/GrDocClust/config.py` 
 
-Ensure you have the necessary Python dependencies installed (e.g., scikit-learn, pandas, gensim, spaCy, etc.).
+- Ensure you have installed the necessary Python dependencies (e.g., scikit-learn, spaCy, etc.) from **requirements.txt**.
 
 
 

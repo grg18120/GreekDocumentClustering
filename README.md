@@ -1,5 +1,6 @@
-## Text Clustering on Modern Greek Textual Corpora
+# Text Clustering on Modern Greek Textual Corpora
 
+### 📄 Academic
 This repository holds the code for the paper titled *"-----"*.
 
 ---
@@ -37,7 +38,7 @@ Ensure you have the necessary Python dependencies installed (e.g., scikit-learn,
 
 ---
 
-### 📄 License
+
 
 This repository is provided for academic use.
 

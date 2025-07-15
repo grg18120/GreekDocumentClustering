@@ -1,4 +1,3 @@
-# from GrDocClust.utils import labels_str_to_int
 import GrDocClust.config as config
 import os
 from collections import Counter
@@ -8,7 +7,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 from tqdm import tqdm 
 from sentence_transformers import SentenceTransformer
-
 
 
 # ------------------------ HELPFUL FUNCS ------------------------ #

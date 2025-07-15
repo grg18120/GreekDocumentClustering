@@ -14,10 +14,10 @@ local_precomputed_vectors_path = f'{ROOT_DIR}Precomputed_Vectors\\'
 
 # ------------------------ Datasets - Corpus ------------------------ #
 datasets_strings = [
-    #"test",
+    "test",
     #"greeksum",
     #"greek_reddit",
-    "pubmed4000_greek",
+    #"pubmed4000_greek",
 ]
 
 def datasets_pointers():
@@ -59,7 +59,7 @@ def vectorizers_pointers():
 # ------------------------ Clustering Algorithms ------------------------ #
 clustering_algorithms_strings = [
     "kmeans",
-    # "kmedoids",
+    "kmedoids",
 ]
 
 # Config Clustering algorithm approaches
@@ -84,7 +84,7 @@ def clustering_algorithms_arguments(n_clusters):
 def clustering_algorithms_pointers():
     return {
         "kmeans": algos.kmeans,
-        # "kmedoids": algos.kmedoids,
+        "kmedoids": algos.kmedoids,
     }
 
 

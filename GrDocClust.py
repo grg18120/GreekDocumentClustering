@@ -83,4 +83,4 @@ for dataset_string in config.datasets_strings:
                     score  = utils.wrapper_args(config.evaluation_metrics_pointers().get(evaluation_metric_string),[list(labels_true), list(labels_pred)])
                     all_eval_metric_values.append(score)
                     print(f"{evaluation_metric_string} = {score}")
-                    # experiments.save_results_csv(dataset_string, vectorizer_string, n_clusters, all_eval_metric_values) 
+                    experiments.save_results_csv(dataset_string, vectorizer_string, n_clusters, all_eval_metric_values) 

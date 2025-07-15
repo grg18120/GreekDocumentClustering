@@ -2,22 +2,27 @@ import GrDocClust.algos as algos
 import GrDocClust.metrics as metrics
 import GrDocClust.utils as utils
 
+
+
 # Config values. 
-ROOT_DIR = 'C:\\Users\\g.georgariou\\Documents\\Visual Studio Code Projects\\GreekDocumentClustering\\'
-# ROOT_DIR = 'PATH_TO\\GreekDocumentClustering\\'
+ROOT_DIR = 'PATH_TO\\GreekDocumentClustering\\'
 csv_dir = f'{ROOT_DIR}Results\\' 
 figures_dir = f'{ROOT_DIR}figures\\'
 local_datasets_path = f'{ROOT_DIR}Datasets\\'
-local_models_storage_path = f'E:\\NLP_Models_Cached_Local\\NLP_Models_Cached_Local\\'
-#local_models_storage_path = f'{ROOT_DIR}NLP_Models_Cached_Local\\'
+local_models_storage_path = f'{ROOT_DIR}NLP_Models_Cached_Local\\'
 local_precomputed_vectors_path = f'{ROOT_DIR}Precomputed_Vectors\\'
+
+plot_true_labels_dataset_distribution = False
+plot_vectors2D_predict_labels = False
+plot_vectors2D_true_labels = False
+random_state = 42
 
 # ------------------------ Datasets - Corpus ------------------------ #
 datasets_strings = [
-    #"test",
-    #"greeksum",
+    "test",
     #"greek_reddit",
-    "pubmed4000_greek",
+    #"pubmed4000_greek",
+    #"greeksum",
 ]
 
 def datasets_pointers():
@@ -59,7 +64,7 @@ def vectorizers_pointers():
 # ------------------------ Clustering Algorithms ------------------------ #
 clustering_algorithms_strings = [
     "kmeans",
-    # "kmedoids",
+    "kmedoids",
 ]
 
 # Config Clustering algorithm approaches
@@ -84,7 +89,7 @@ def clustering_algorithms_arguments(n_clusters):
 def clustering_algorithms_pointers():
     return {
         "kmeans": algos.kmeans,
-        # "kmedoids": algos.kmedoids,
+        "kmedoids": algos.kmedoids,
     }
 
 

@@ -11,7 +11,9 @@ This repository holds the code for the paper titled *"-----"*.
 
 - Ensure you have installed the necessary Python dependencies (e.g., scikit-learn, spaCy, etc.) from **requirements.txt**.
 
+- Ensure you have numpy version 1.X.X.
 
+- Manage Images Exports in: `GreekDocumentClustering/GrDocClust/config.py` 
 
 ---
 
@@ -37,24 +39,4 @@ This repository holds the code for the paper titled *"-----"*.
 - Contributions or suggestions are welcome.
 
 ---
-
-
-
-This repository is provided for academic use.
-
-
-
------------------------------------------------------------
-pip install -U pip setuptools wheel
-pip install -U spacy
-python -m spacy download el_core_news_lg
-
-pip install scikit-learn
-pip install scikit-learn-extra # EDW TO ERROR
-
-pip install sentence-transformers==4.1.0
-
-pip install einops #gia to tzina
-
-pip install pandas==2.0.2# EDW TO ERROR
 
